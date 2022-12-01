@@ -76,8 +76,6 @@ def tambah_motor():
     
     balik_menu()
 
-''''''
-
 # Fungsi untuk Melihat stok Motor (Read)
 def lihat_motor():
     clear_scr()
@@ -106,7 +104,6 @@ def lihat_motor():
     
     balik_menu()
 
-''''''
 # Fungsi untuk Mengubah data stok Motor (Edit)
 def edit_motor():
     clear_scr()
@@ -155,7 +152,6 @@ def edit_motor():
 
     balik_menu()
 
-''''''
 # Fungsi untuk menghapus stok Motor
 def hapus_motor():
     clear_scr()
@@ -192,8 +188,6 @@ def hapus_motor():
     print("Data Motor Telah terhapus.")
     balik_menu()
 
-''''''
-
 #Fungsi untuk mencari data Stok Motor
 def cari_motor():
     clear_scr()
@@ -204,7 +198,7 @@ def cari_motor():
         for row in csv_reader:
             Motor.append(row)
 
-    kode = input("Masukkan Kode Motor yang ingin dicari : ")
+    kode = input("Mencari motor dengan Kode : ")
 
     data_motor = []
 
@@ -224,15 +218,11 @@ def cari_motor():
         print("Data tidak ditemukan.")
     balik_menu()
 
-''''''
-
 # Fungsi untuk kembali ke Pilih Menu
 def balik_menu():
     print("\n")
     input("Tekan Enter untuk kembali ke Menu...")
     tampil_menu()
-
-''''''
 
 if __name__ == "__main__":
     while True:
